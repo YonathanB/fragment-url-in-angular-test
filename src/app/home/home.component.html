@@ -1,0 +1,17 @@
+<div class="links"> 
+  <ul>
+    <li *ngFor="let link of ids">
+      <a [routerLink] [fragment]="link">{{link}}</a>
+    </li>
+  </ul>
+</div>
+
+<section>
+  <div class="section"class="track" *ngFor="let link of ids"  >
+    <h1   [attr.id]='link'  >{{link}}</h1>
+    <div class="content">
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt saepe exercitationem praesentium modi repudiandae dicta consectetur ab veritatis quaerat quibusdam quod, dolorem fugit temporibus voluptas magni ad odio, adipisci doloremque!
+    </div>
+  </div>
+  <a [routerLink]='"/dummy-page"' >Optional Page</a>
+</section>
